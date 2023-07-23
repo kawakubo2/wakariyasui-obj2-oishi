@@ -1,6 +1,5 @@
 package chapter22;
 
-import java.time.Duration;
 import java.time.LocalTime;
 
 public class DurationExample2 {
