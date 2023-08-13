@@ -1,7 +1,5 @@
 package chapter21;
 
-import java.util.regex.Pattern;
-
 public class SplitExample9 {
     public static void main(String[] args) {
         String[] dates = {
