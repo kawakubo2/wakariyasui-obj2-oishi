@@ -7,14 +7,14 @@ public class Example4 {
     public static void main(String[] args) {
         CompletableFuture<Long> future = 
             CompletableFuture
-                .supplyAsync(() -> fibonacci(10))
-                .thenCompose(result -> CompletableFuture.supplyAsync(() -> result * 10))
+                .supplyAsync(() -> fibonacci(40))
+                .thenCompose(result -> CompletableFuture.supplyAsync(() -> result * 10 ))
                 .orTimeout(5, TimeUnit.MICROSECONDS)
                 .whenComplete((ret, err) -> {
                     if (err == null) {
                         System.out.println(ret);
                     } else {
-                        System.out.println("エラーです。");
+                        System.out.println("エラーです。" + err.getMessage());
                     }
                 });
     }
