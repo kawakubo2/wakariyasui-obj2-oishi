@@ -1,0 +1,26 @@
+[
+    {
+        "code": "K16",
+        "name": "Wood screws",
+        "desc": "brass 20mm pack of 50",
+        "unitPrice": 7.75
+    },
+    {
+        "code": "D24",
+        "name": "Wood glue",
+        "desc": "clear 1 letter",
+        "unitPrice": 5.50
+    },
+    {
+        "code": "M93",
+        "name": "Sand Paper(M)",
+        "desc": "medium grade",
+        "unitPrice": 10.25
+    },
+    {
+        "code": "M94",
+        "name": "Sand Paper(F)",
+        "desc": "fine grade",
+        "unitPrice": 14.75
+    }
+] 
