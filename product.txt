@@ -1,1 +1,4 @@
-F30001,白い約束5kg,48000,2022-10-20,1
+K16,Woodscrews,brass 20mm pack of 50,7.75,250
+D24,Woodglue,clear 1 letter,5.50,1000
+M93,Sandpaper(M),medium grade 100sheets,10.25,500
+M94,Sandpaper(F),fine grade 100 sheets,14.75,100

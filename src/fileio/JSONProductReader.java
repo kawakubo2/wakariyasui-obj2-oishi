@@ -10,7 +10,7 @@ import java.util.Map;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JSONReader {
+public class JSONProductReader implements ProductReadable {
     public Map<String, Product> getProducts() throws IOException, JsonParseException {
         Map<String, Product> result = new HashMap<>();
         String data = Files.readString(Path.of("products.json"), StandardCharsets.UTF_8);
@@ -21,12 +21,5 @@ public class JSONReader {
            result.put(p.getCode(), p); 
         }
         return result;
-    }
-    public static void main(String[] args) throws JsonParseException, IOException{
-        JSONReader r = new JSONReader();
-        Map<String, Product> products = r.getProducts();
-        for (String code: products.keySet()) {
-            System.out.println("code:" + products.get(code));
-        }
     }
 }

@@ -5,8 +5,16 @@ public class Product {
     private String name;
     private String desc;
     private double unitPrice;
+    private int weight;
     public Product() {
         ;
+    }
+    public Product(String code, String name, String desc, double unitPrice, int weight) {
+        this.code = code;
+        this.name = name;
+        this.desc = desc;
+        this.unitPrice = unitPrice;
+        this.weight = weight;
     }
     public String getCode() {
         return code;
@@ -31,6 +39,12 @@ public class Product {
     }
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
+    }
+    public int getWeight() {
+        return weight;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
     @Override
     public String toString() {
