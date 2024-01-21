@@ -13,4 +13,9 @@ public class Card {
     public Suit getSuit() {
         return suit;
     }
+    @Override
+    public String toString() {
+        return "Card [number=" + number + ", suit=" + suit + "]";
+    }
+    
 }
